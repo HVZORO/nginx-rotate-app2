@@ -96,3 +96,8 @@ docker compose up --build
 - `start.sh` launches `rotate_pages.sh` in the background and then starts nginx in the foreground, keeping the container alive.
 - The rotation script uses a symlink (`ln -sf`) rather than copying files, so page switches are instantaneous with no file I/O overhead.
 - After `DURATION` seconds, the rotation script exits, but nginx continues serving whichever page was last active.
+
+
+## Author
+- Harsha
+
